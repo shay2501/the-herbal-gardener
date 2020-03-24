@@ -20,25 +20,33 @@
         margin: auto;
         width: 50%;
       }
-      .header {
+      header {
+        position:relative;  
         background-image: url('./assets/plain_background.png');
-        background-repeat: repeat-x;
-        height: 500px;
+        background-repeat: repeat-x repeat-y;
+        height: 300px;
+        z-index:50;
       }
       .checkers {
+        position: absolute;
+        top: 100px;
+        left: 0px;
         background-image: url('./assets/Checkers_1024_transparent.png');
         background-repeat: repeat-x;
-        height: 200px;
-        position: absolute;
+        height: 240px;
+        width:100%;
+        z-index: 100;
       }
     </style>
   </head>
   <body>
-    <div id="header" class="header">
-      <div class="headimg">
-        <img src="./assets/header_peacock_large.png" />
-      </div>
-      <div class="checkers"></div>
+      <header>
+        <div class="headimg">
+            <img src="./assets/header_peacock_large.png" />
+        </div>
+        <div class="checkers"></div>
+    </header>
+      
     </div>
   </body>
 </html>
